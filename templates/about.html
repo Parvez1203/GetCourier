@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+{% load static %}
+  <!--page content starts here-->
+  <section class="bread_crum">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-2">
+            <h3>About Us</h3>
+            <ol id="bread" class="breadcrumb pt-0 pl-0">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">about</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="welcome">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-1 text-center">
+            <h5>Welcome To My Website</h5>
+            <hr>
+ 
+        </div>
+        <div class="row pb-2">
+          <div class="col-md-4 align-items-center">
+              <img class="img_fluid" src="{%static 'courier/images/our_qualities/netflix.png'%}" id="logo" alt="">
+          </div>
+          <div class="col-8">
+             <p><b>Hello</b>
+              
+              ,What’s more friendly that a simple “hello”? This is probably the most common trend that
+              I come across 
+              and is simply everywhere in designer portfolios these days. 
+              The idea is of course to make the site seem that much more alive and friendly,
+               as if it’s a person welcoming you in. This is often effective when combined 
+               with a photo or illustration of the designer so it’s clear who the message is coming from.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 pt-1">
+            <h5>We are commited with our services.</h5>
+                    </div>
+        <div class="col-12 pt-1">
+          <h6>subsscribe to our Newsletter to stay updated</h6>
+
+        </div>
+        <div class="input-group pb-3">
+                <input type="email" class="form-control email_search" placeholder="Enter your email">
+                <span class="input-group-btn">
+                    <button class="btn btn-theme subscribe_button" type="submit">Subscribe</button>
+                </span>
+              </div>
+      </div>
+    </div>
+  </section>
+
+
+ <section class="team welcome">
+  <div class="container">
+    <div class="row pt-1">
+      <div class="col-12 pt-1 text-center">
+          <h5>Our awesome team</h5>
+          <hr>
+    <div class="row pt-1 pb-2">
+      <div class="col-md-4 text-center ">
+          <img class="team_imgs"  src="{%static 'courier/images/CEO.jpg'%}"  alt="">
+          <p>CEO</p>
+          <span>-parvez mir</span>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="team_imgs"  src="{%static 'courier/images/senior_b_analyst.png'%}" alt="">
+        <p>Senior Business Analyst</p>
+        <span>vecant position</span>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="team_imgs"  src="{%static 'courier/images/finalhr.jfif'%}" alt="">
+        <p>Senior HR</p>
+        <span>vecant position</span>
+      </div>
+    </div>
+      
+      <div class="row pb-3">
+        <div class="col-md-4 text-center">
+          <img class="team_imgs"  src="{%static 'courier/images/java.jfif'%}" alt="">
+          <p>JAVA Developer</p>
+          <span>vecant position</span>
+        </div>
+        <div class="col-md-4 text-center">
+          <img class="team_imgs"  src="{%static 'courier/images/sales_head.png'%}" alt="">
+          <p>Sales Head</p>
+          <span>vecant position</span>
+        </div>
+        <div class="col-md-4 text-center">
+          <img class="team_imgs"  src="{%static 'courier/images/intern.png'%}" alt="">
+          <p>Software Intern</p>
+          <span>vecant position</span>
+        </div>
+      </div>
+        </div>
+ </section>
+
+
+ <section class="worked_with">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="middle_header_text">
+          <h4>Some of our trusted clients</h4>
+          <hr>
+        </div>
+
+      </div>
+    </div>
+    <div class="row  text-center pb-2">
+      <div class="col-lg-2">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/apple.png'%}" alt="">
+
+      </div>
+      <div class="col-lg-2 ">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/netflix.png'%}" alt="">
+      </div>
+      <div class="col-lg-2">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/google.png'%}" alt="">
+      </div>
+      <div class="col-lg-2">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/yahoo.png'%}" alt="">
+      </div>
+      <div class="col-lg-2">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/facebook.png'%}" alt="">
+      </div>
+      <div class="col-lg-2">
+        <img class="img_sizes" src="{%static 'courier/images/our_qualities/insta.jfif'%}" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!--page content ends here-->
+{% endblock %}

@@ -1,0 +1,298 @@
+
+
+#topheader{
+    background-color: ghostwhite;
+    border-bottom: 1px solid rgba(20, 19, 19,0.1);
+
+}
+
+#topheader a{
+    text-decoration: none;
+    color:rgba(71, 71, 71,1);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+#topheader a:hover{
+    background-color: rgb(30, 175, 42);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    transition-duration: 0.5s;
+
+
+}
+
+.welcome_user{
+    font-size: 12px;
+}
+
+#navbar{
+    background-color: rgb(5, 45, 129);
+    padding-left: 0px;
+
+}
+
+.right_nav{
+    float : right;
+}
+
+#main-icon{
+      color: aliceblue;
+      vertical-align: center;
+      font-size: 30px;
+
+      padding: 0;
+      margin: 0;
+
+}
+
+nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/*bottom footer starts here */
+
+.upper{
+    background-color: rgb(46, 40, 40);
+
+
+}
+
+.upper h3{
+    color: white;
+}
+
+.upper p{
+    color: white;
+}
+
+.upper a{
+    color: white;
+    font-weight: 600;
+}
+
+.upper i{
+    color: aliceblue;
+}
+
+.lower{
+    background-color: rgb(1, 2, 2);
+    color: white;
+    text-align: center;
+}
+
+/*bottom footer ends here */
+
+/*page content*/
+.window{
+    background-color: rgb(7, 84, 148)
+
+
+}
+
+
+
+.text_in_window{
+
+     color: aliceblue;
+}
+
+.window_button{
+    background-color: rgb(5, 5, 77);
+    color: whitesmoke;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-style: none;
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.window_button:hover{
+    box-shadow: 0px 0px 10px rgb(248, 150, 58);
+    background-color: rgb(216, 226, 226);
+    color: black;
+    transition-duration: 0.3s;
+    transition:ease-in-out;
+}
+
+.window_img{
+    width: 500px;
+    height: 350px;
+}
+
+
+
+.middle_header_text h4{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(78, 76, 76);
+    margin-top: 10px;
+}
+
+.middle_header_text hr{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 0;
+}
+
+.size{
+
+    width: 100px;
+    height: 100px;
+}
+
+.ask{
+
+
+    color: aliceblue;
+    background-color: rgb(7, 103, 182);
+
+}
+
+.text_in_about_window{
+    color: black;
+}
+
+.subscribe{
+    color: aliceblue;
+    background-color: rgb(7, 103, 182);
+
+}
+
+
+
+.email_search{
+    width: 850px;
+    border-radius: 17px 0 0 17px;
+    border-color: transparent;
+    height: 30px;
+    padding-left: 14px;
+}
+
+.subscribe_button{
+
+    text-decoration: none;
+    height: 30px;
+    border-color: transparent;
+    background-color: rgb(185, 29, 152);
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 0 20px 20px 0;
+    padding-top: 2px;
+
+}
+
+
+
+.worked_with{
+    background-color: rgb(255, 255, 255);
+}
+
+.img_sizes{
+    width:120px;
+    height: 80px;
+}
+
+
+/*about page starts here*/
+#bread{
+    background-color: rgba(137, 188, 238,0)
+
+}
+.bread_crum{
+    background-color: rgba(137, 188, 238, 0.432)
+}
+
+.welcome h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(68, 68, 71);
+    letter-spacing: 5px;
+    padding-bottom: 0px;
+
+}
+
+hr{
+    margin-top: 0px;
+}
+
+#logo{
+
+    width: 300px;
+    height: 200px;
+
+
+}
+
+.welcome p{
+    margin-top: 54px;
+}
+
+.team_imgs{
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    padding-bottom: 0;
+}
+
+.team p{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team span{
+    font-family: monospace;
+    color: rgba(44, 44, 44, 0.699);
+    font-size: small;
+    margin-top: 1px;
+}
+
+
+
+/*about page ends here*/
+
+
+/*portfolio starts here*/
+.port_img_size{
+    width: 300px;
+    height: 200px;
+
+}
+
+/*portfolio ends here*/
+
+
+/*contactus starts here*/
+
+#neighbour{
+     margin-left: 46px;
+}
+
+/*contactus ends here*/
+
+
+/*login-popup starts here*/
+.login-popup{
+    width: 800px;
+    height: 500px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50% , -50% );
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border : 2px solid rgb(84, 202, 84);
+}
+
+.background{
+    background-color: rgba(88, 86, 86, 0.616);
+}
+/*login-popup ends here*/

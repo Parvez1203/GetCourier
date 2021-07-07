@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+{% load static %}
+  <!--page content start here-->
+  <section class="bread_crum">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-2">
+          <h3>Fill Requirments</h3>
+          <ol id="bread" class="breadcrumb pt-0 pl-0">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Fill Requirments</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>We are here to help.If you have any Requirments or queries pleass fill
+            up the form and we will do our best to serve you.Alternativly simply just
+            give us call on our number.  <br>
+                <span style="color: brown;"> package size should not be more than 30kg *.</span>
+          </p>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--must understand forms section one more time-->
+  <section class="form_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name='recipient_name' class="form-control" placeholder="Recipient Name *">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" name='recipient_email' class="form-control" placeholder="Email *">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="phone" name='recipient_mobile' class="form-control" placeholder="Phone Number *">
+              </div>
+              <div class="form-group col-md-6">
+                <select name='item_type' class="form-control">
+                    <option selected>Item type*</option>
+                    <option>parcel</option>
+                    <option>documents</option>
+                    
+
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <input type="text" name='item_name' class="form-control" placeholder="Item-Name *">
+              </div>
+              
+              <div class="form-group col-6" >
+                <input type="text" name='item_weight' class="form-control" placeholder="Item-Weight(KG) *">
+              </div>
+              
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <input type="text" name='sender_pincode' class="form-control" placeholder="Pickup Pincode *">
+              </div>
+              <div class="form-group col-6">
+                <input type="text" name='receiver_pincode' class="form-control" placeholder="Delivery Pincode *">
+              </div>
+              
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-12">
+                <textarea rows="5" name='receiver_address' class="form-control" placeholder="Delivery Address *"></textarea>
+              </div>
+              
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-12">
+                <textarea rows="5" name='sender_address' class="form-control" placeholder="Pickup Address *"></textarea>
+              </div>
+              
+            </div>
+
+            
+            <div class="form-row">
+              <div class="form-group col-12">
+                <input type="file" name="image" required>
+                <lable>upload your image here</lable>
+              </div>
+              
+            </div>
+             
+            <div class="form-row">
+              <div class="form-group col-12 pb-0 mb-0"> 
+                 <p>drop-off:- <br>
+                  <input type="checkbox" name="neighbour" id="neighbour"> to-neighbours  </p> 
+                
+               
+              </div>
+              
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-12 text-center">
+               <button type="submit" name='submit' class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+               Submit Information</button> 
+              
+              </div>
+              
+            </div> 
+          </form>
+          
+        </div>
+        <div class="col-12 col-md-6 mt-4">
+             <h5>Call Us / WhatsApp</h5>
+             <a href="tel:+4646687798"><i class="fa fa-phone"></i> +(91) 87798779797</a>
+
+             <h5 class="mt-2">Email / Website</h5>
+             <a href="mailto:randomemail@gmail.com"><i
+              class="fa fa-envelope"></i> randomemail@gmail.com</a><br>
+
+              <a  href="https://www.upwork.com/freelancers/~01ea522e8be37e54bc"><i class="fa fa-globe" aria-hidden="true"></i>https://www.upwork.com/freelancers/parvez</a>             
+              <h5 class="mt-2 ">Working hours</h5>
+               Mon - Fri : 9am - 6am(IST) 
+
+              <h5 class="mt-2" >Address</h5>
+              <p>xyz estate,Royal palm,station - west kanodar - 385520,Gujarat</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container-fluid">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29138.332069219374!2d72.395179!3d24.091242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395cedba62ff6a4f%3A0x13992a73aca82b70!2sKanodar%20Navi%20Masjid!5e0!3m2!1sen!2sin!4v1592218037196!5m2!1sen!2sin" width="100%" height="300px" frameborder="0" style="border:0;" ></iframe>
+  </div>
+  </section>
+
+
+          {% comment %} <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+
+            <div class="pb-3">
+                <form action="/contact_us/" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group my-2">
+                        <label>Address</label>
+                        <input type="text" name="address" id="" class="form-control" placeholder="Enter Your Address" aria-describedby="helpId">
+                      </div>
+
+                      <div class="form-group my-2">
+                        <label>Phone</label>
+                        <input type="text" name="phone" id="" class="form-control" placeholder="Enter Your Phone Number" aria-describedby="helpId">
+                        
+                      </div>
+                       
+                      <input type="submit" value= "Check Out" class="btn btn-primary my-2 col-md-6" style="float: right;"></button>
+                </form>
+            </div>
+          
+           
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+  
+   <!--modal end-->
+
+  <!--page content start here-->
+
+{% endblock %}
